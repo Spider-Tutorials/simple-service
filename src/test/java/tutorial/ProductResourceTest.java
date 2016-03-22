@@ -1,17 +1,18 @@
 package tutorial;
 
-import javax.ws.rs.client.Client;
-import javax.ws.rs.client.ClientBuilder;
-import javax.ws.rs.client.WebTarget;
-
 import org.glassfish.grizzly.http.server.HttpServer;
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+
+import javax.ws.rs.client.Client;
+import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.client.WebTarget;
+import java.util.List;
+
 import static org.junit.Assert.assertEquals;
 
-public class MyResourceTest {
+public class ProductResourceTest {
 
     private HttpServer server;
     private WebTarget target;
@@ -27,7 +28,8 @@ public class MyResourceTest {
         // support for JSON in the client (you also have to uncomment
         // dependency on jersey-media-json module in pom.xml and Main.startServer())
         // --
-        // c.configuration().enable(new org.glassfish.jersey.media.json.JsonJaxbFeature());
+
+//        c.getConfiguration().enable(new org.glassfish.jersey.media.json.JsonJaxbFeature());
 
         target = c.target(Main.BASE_URI);
     }
@@ -41,8 +43,16 @@ public class MyResourceTest {
      * Test to see that the message "Got it!" is sent in the response.
      */
     @Test
-    public void testGetIt() {
-        String responseMsg = target.path("myresource").request().get(String.class);
-        assertEquals("Got it!", responseMsg);
+    public void testGetSingleProduct() {
+        Product responseMsg = target.path("product/iphone6").request().get(Product.class);
+        assertEquals("iphone6", responseMsg.getName());
+        assertEquals("apples mobile phone", responseMsg.getDescription());
+        assertEquals("apple", responseMsg.getProducer());
+    }
+
+    @Test
+    public void testGetallProducts() {
+        List<Product> products = target.path("product").request().get(List.class);
+        assertEquals(2, products.size());
     }
 }
