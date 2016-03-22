@@ -13,4 +13,5 @@ insert into product (name, description, producer) values('iphone6', 'apples mobi
 insert into product (name, description, producer) values('nexus', 'google mobile phone', 'google');
 
 
-CREATE USER 'tutorial'@'%' IDENTIFIED WITH mysql_native_password AS 'tutorial';GRANT USAGE ON *.* TO 'tutorial'@'%' ;
+CREATE USER 'tutorial'@'%' IDENTIFIED by 'tutorial';
+GRANT ALL PRIVILEGES ON `tutorial`.* TO 'tutorial'@'%' WITH GRANT OPTION;
