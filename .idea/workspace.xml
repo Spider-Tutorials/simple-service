@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3049704-9776-4315-ab57-024d6313593f" name="Default" comment="added DTO">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_owlike_genson_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_18.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/tutorial/ProductManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/tables.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/tutorial.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tutorial/Main.java" afterPath="$PROJECT_DIR$/src/main/java/tutorial/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tutorial/Product.java" afterPath="$PROJECT_DIR$/src/main/java/tutorial/Product.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simple-service.iml" afterPath="$PROJECT_DIR$/simple-service.iml" />
+    <list default="true" id="a3049704-9776-4315-ab57-024d6313593f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\workspace\restful-webservice\simple-service\src\main\java\tutorial\MyResource.java" afterPath="$PROJECT_DIR$/src/main/java/tutorial/ProductResource.java" />
-      <change type="MOVED" beforePath="D:\workspace\restful-webservice\simple-service\src\test\java\tutorial\MyResourceTest.java" afterPath="$PROJECT_DIR$/src/test/java/tutorial/ProductResourceTest.java" />
     </list>
     <list id="a518bfc0-c4ff-4075-9e77-670c5a3211e8" name="ignore" comment="" />
     <ignored path="simple-service.iws" />
@@ -539,7 +527,13 @@
       <option name="project" value="LOCAL" />
       <updated>1458579405433</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added backend mysql database">
+      <created>1458657553053</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1458657553053</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -588,7 +582,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="added DTO" />
-    <option name="LAST_COMMIT_MESSAGE" value="added DTO" />
+    <MESSAGE value="Added backend mysql database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added backend mysql database" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
